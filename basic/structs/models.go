@@ -1,8 +1,8 @@
 package main
 
-
-type Employee struct{
-  name string
-  age int 
-  isRemote bool
+type Employee struct {
+    Name     string
+    Age      int
+    IsRemote bool
 }
+
