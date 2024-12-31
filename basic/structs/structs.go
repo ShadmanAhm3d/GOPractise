@@ -3,6 +3,7 @@ package main
 import (
   "fmt"
   "st/morestructs"
+  
 )
 
 
@@ -31,7 +32,7 @@ func createaNewEmployee(Name string,Age int , IsRemote bool) *Employee{ //refere
 
 func main () {
 
-
+/*
   
   var employee1 Employee = Employee{
     Name: "Shadman",
@@ -59,9 +60,22 @@ func main () {
     Year: 1221,
   }
 
+   post2 := morestructs.Post{
+    Typeof: "descriptionPost",
+    MemSize: 12.33,
+    Year: 1221,
+  }
   
   fmt.Println(post1);
+  fmt.Println(post2);
 
+*/
+
+  var result *morestructs.NameandAge = morestructs.SomeFunctionName(12,"Shadman");
+
+  fmt.Printf("This is my adresss : %p" , &(*result))
+  fmt.Println();
+  fmt.Printf("This is my value   : %v", *result);
 
 
 
